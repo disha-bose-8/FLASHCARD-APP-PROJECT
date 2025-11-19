@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/settings.css";
 import { useOutletContext } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = `${import.meta.env.VITE_API_URL}/api`;
 
 function Settings() {
     const outletContext = useOutletContext();

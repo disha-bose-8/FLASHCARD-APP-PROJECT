@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../css/reviewMode.css";
 import { useOutletContext, useNavigate } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = `${import.meta.env.VITE_API_URL}/api`;
 
 function ReviewMode() {
 	const [user, setUser] = useState(null);

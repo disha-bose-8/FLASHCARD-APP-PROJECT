@@ -8,7 +8,7 @@ import { IoMdAddCircleOutline } from "react-icons/io";
 import { MdDelete, MdOutlineModeEdit } from "react-icons/md";
 import { useOutletContext } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = `${import.meta.env.VITE_API_URL}/api`;
 
 function MyFlashcards() {
   const user = JSON.parse(localStorage.getItem("user"));

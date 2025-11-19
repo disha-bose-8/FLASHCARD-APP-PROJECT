@@ -6,8 +6,6 @@ import userRoutes from "./routes/userRoutes.js";
 import folderRoutes from "./routes/folderRoutes.js";
 import flashcardRoutes from "./routes/flashcardRoutes.js";
 
-
-
 dotenv.config();
 connectDB();
 
@@ -17,8 +15,12 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
-
 app.use("/api/folders", folderRoutes);
 app.use("/api/flashcards", flashcardRoutes);
 
-app.listen(5000, () => console.log("🚀 Server running on port 5000"));
+// ✅ Correct for local + Render deployment
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+});

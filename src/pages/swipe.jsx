@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../css/swipe.css";
 import { useOutletContext } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = `${import.meta.env.VITE_API_URL}/api`;
 
 function Swipe() {
   const [user, setUser] = useState(null);

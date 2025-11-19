@@ -3,7 +3,7 @@ import "../css/NotMemorized.css";
 import { MdDelete } from "react-icons/md";
 import { useOutletContext} from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = `${import.meta.env.VITE_API_URL}/api`;
 
 function NotMemorized() {
     const outletContext = useOutletContext();
