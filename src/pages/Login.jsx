@@ -6,6 +6,8 @@ import "../css/Login.css";
 const NUM_CARDS = 25;
 
 const Login = ({ onLoginSuccess }) => {
+    console.log("API URL =", import.meta.env.VITE_API_URL);
+
     const navigate = useNavigate();
 
     // State for form
