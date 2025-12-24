@@ -12,6 +12,7 @@ function Demo() {
             <h2>
                 <AiOutlineIdcard className="h2-icon" />Flashcard Studio
             </h2>
+
             <br></br>
             <p className="title">Smarter reviews. Stronger memory. <GiBookshelf className="title-icon"/></p>
             <p className="info">A better way to study with flashcards is here. Creating your own set of flashcards is simple with our free flashcard maker.</p>
