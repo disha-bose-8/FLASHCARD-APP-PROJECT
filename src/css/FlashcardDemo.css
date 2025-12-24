@@ -27,9 +27,9 @@
 }
 
 h3 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Inter", sans-serif;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     color: var(--text-primary);
     font-size: 3.5rem;
     margin-bottom: 1rem;
@@ -53,6 +53,11 @@ h4 {
     position: relative;
     background: none;
     flex-shrink: 0;
+}
+
+.q{
+    font-size: 1.7rem;
+    font-weight: 600;
 }
 
 .card-inner {

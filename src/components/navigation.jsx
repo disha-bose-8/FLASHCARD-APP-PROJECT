@@ -7,6 +7,7 @@ import *as AiIcons from "react-icons/ai";
 import { SidebarData } from './SidebarData'
 import { IconContext } from 'react-icons';
 
+
 function Navigation({ iconcolor, sidebar, onClose }) {
     return (
         <> 
