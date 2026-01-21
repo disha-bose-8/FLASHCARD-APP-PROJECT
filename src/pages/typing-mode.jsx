@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "../css/typing-mode.css";
 import { useOutletContext } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://flashcard-app-project-u8zp.onrender.com/api";
 
 function Typing() {
   const [user, setUser] = useState(null);
