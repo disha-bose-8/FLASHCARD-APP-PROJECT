@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import flashcardSchema from "./Flashcard.js";
+import flashcardSchema from "./flashcard.js";
 
 const folderSchema = new mongoose.Schema({
     name: { type: String, required: true },
