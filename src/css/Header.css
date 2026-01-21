@@ -1,44 +1,87 @@
 @import url("../Variables.css");
 
 .header {
+    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background: none !important;
-    border-color: var(--text-muted); 
+    border-color: var(--text-muted);
     opacity: 0.8;
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 10;
+
 }
 
-.header-center{
-    background:none;
-}
-.header-left{
-    background:none;
-}
-.header-logo{
-    background:none !important;
+.header-center {
+    background: none;
 }
 
-/* Remove background from the card icon link/container */
+.header-left {
+    background: none;
+}
+
+.header-logo {
+    background: none !important;
+}
+
 .logo-flash {
     background: none !important;
     border: none !important;
     outline: none !important;
+    font-family: 'Playfair Display', serif;
 }
 
-.page-title{
-    background:none;
+.page-title {
+    background: none;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: #3a214d;
+    text-transform: uppercase;
 }
 
-.logo-flash svg {   
+.logo-flash svg {
     fill: pink;
 }
 
 .toggle-container {
-    background:none;
+    background: none;
 }
 
+.header a,
+.header button {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+}
 
+.header a:hover,
+.header button:hover {
+    color: #3a214d;
+}
+[data-theme="dark"] .page-title {
+    color: #f3e9ff;
+    text-shadow:
+        0 0 10px rgba(192, 132, 252, 0.35),
+        0 0 24px rgba(140, 90, 200, 0.25);
+}
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+        letter-spacing: 0.1em;
+    }
+}
 
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.6rem;
+        letter-spacing: 0.08em;
+    }
+}

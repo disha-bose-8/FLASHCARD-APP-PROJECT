@@ -368,33 +368,36 @@ function MyFlashcards() {
 
       {/* ========== CREATE FOLDER FORM ========== */}
       {showFolderForm && (
-        <div className="add-card">
-          <div className="form-container">
-            <h3>Create New Folder</h3>
+  <div className="add-card create-folder-overlay">
+    <div className="create-folder-modal">
+      <h2 className="create-folder-title">Create New Folder</h2>
 
-            <input className="input-area"
-              type="text"
-              placeholder="Enter folder name"
-              value={newFolderName}
-              onChange={(e) => setNewFolderName(e.target.value)}
-            />
+      <input
+        className="create-folder-input"
+        type="text"
+        placeholder="Enter folder name"
+        value={newFolderName}
+        onChange={(e) => setNewFolderName(e.target.value)}
+      />
 
-            {error && <p className="error">{error}</p>}
+      {error && <p className="error">{error}</p>}
 
-            <div className="btns">
-              <button className="save-btn" onClick={handleSaveFolder}>
-                Save
-              </button>
-              <button
-                className="cancel-btn"
-                onClick={() => setShowFolderForm(false)}
-              >
-                Cancel
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <div className="create-folder-actions">
+        <button className="create-save-btn" onClick={handleSaveFolder}>
+          Save
+        </button>
+        <button
+          className="create-cancel-btn"
+          onClick={() => setShowFolderForm(false)}
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
+
 
       {/* ========== INSIDE FOLDER ========== */}
       {selectedFolder && !showForm && (
