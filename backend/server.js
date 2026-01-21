@@ -20,5 +20,8 @@ app.use("/api/users", userRoutes);
 
 app.use("/api/folders", folderRoutes);
 app.use("/api/flashcards", flashcardRoutes);
+app.get("/", (req, res) => {
+  res.send("Flashcard Pro API is running 🚀");
+});
 
 app.listen(5000, () => console.log("🚀 Server running on port 5000"));
