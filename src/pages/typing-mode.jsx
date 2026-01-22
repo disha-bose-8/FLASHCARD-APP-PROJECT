@@ -4,6 +4,7 @@ import { useOutletContext } from "react-router-dom";
 
 const API = "https://flashcard-app-project-u8zp.onrender.com/api";
 
+
 function Typing() {
   const [user, setUser] = useState(null);
   const [flashcards, setFlashcards] = useState([]);

@@ -8,7 +8,8 @@ import { IoMdAddCircleOutline } from "react-icons/io";
 import { MdDelete, MdOutlineModeEdit } from "react-icons/md";
 import { useOutletContext } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://flashcard-app-project-u8zp.onrender.com/api";
+
 
 function MyFlashcards() {
   const user = JSON.parse(localStorage.getItem("user"));
@@ -430,10 +431,8 @@ function MyFlashcards() {
               <IoIosArrowDropleft size={38} />
             </div>
 
-            <div
-              className="fab-menu"
-              style={{ position: "fixed", right: 20, bottom: 86, zIndex: 40 }}
-            >
+            <div className="fab-menu">
+
               <div
                 className="fab-icon"
                 onClick={handleImportClick}

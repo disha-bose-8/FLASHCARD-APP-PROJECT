@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../css/reviewMode.css";
 import { useOutletContext, useNavigate } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://flashcard-app-project-u8zp.onrender.com/api";
+
 
 function ReviewMode() {
 	const [user, setUser] = useState(null);

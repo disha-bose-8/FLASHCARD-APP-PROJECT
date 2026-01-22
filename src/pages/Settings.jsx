@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../css/settings.css";
 import { useOutletContext } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://flashcard-app-project-u8zp.onrender.com/api";
+
 
 function Settings() {
     const outletContext = useOutletContext();
