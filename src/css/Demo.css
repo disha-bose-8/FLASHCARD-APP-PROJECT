@@ -10,14 +10,12 @@ h2 {
     text-align: center;
     font-weight: 600;
     color: #3b1f47 !important;
-
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: 5rem;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-
     background: none;
     -webkit-text-stroke: 0.5px var(--text-primary);
-    line-height: 1.1;
+    line-height:0.5;
 }
 
 .h2-icon {
@@ -38,19 +36,17 @@ h2 {
 
 .btn {
     text-align: center;
-    background: none;
-    padding: clamp(18px, 4vw, 40px) clamp(15px, 4vw, 30px);
-    border-radius: 20px;
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    background:none;
+    padding: 40px 30px;
+    border-radius: 25px;
+    font-size: 1.5rem;
     color: var(--text-white);
     border: none;
     cursor: default;
     transition: all 0.3s ease;
-
+    max-width: 600px;
     width: 100%;
-    max-width: 520px;
 }
-
 
 
 .demo-bg
@@ -62,12 +58,11 @@ h2 {
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    margin-top: 1rem;
     background: none;
 }
-
 
 .btn-link {
     padding: 12px 30px;
@@ -83,9 +78,7 @@ h2 {
     transition: all 0.3s ease;
     text-align: center;
     min-width: 140px;
-    width: fit-content;
 }
-
 
 .btn-link.primary {
     background: var(--button-bg);
@@ -116,7 +109,6 @@ p {
     color: var(--text-primary);
     text-align: center;
     margin: 0.5rem 0;
-
 }
 
 .demo {
@@ -142,14 +134,13 @@ p {
 }
 
 .title {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    font-family:'Inter', sans-serif;
+    font-size: 2.2rem;
     color: var(--text-primary);
     text-align: center;
-    margin: 1rem 0 1.5rem 0;
+    margin: 1rem 0 2rem 0;
     font-weight: 600;
 }
-
 
 .title-icon {
     font-size: 50px;
@@ -182,11 +173,11 @@ p {
 
     .btn-container {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
 
     .btn-link {
-        width: 100%;
+        width: 200px;
     }
 }
 
